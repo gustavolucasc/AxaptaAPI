@@ -21,6 +21,7 @@ namespace AxaptaApiApp.Controllers
         [CacheFilter]
         public async Task<IHttpActionResult> ReadExpense([FromUri] string exp)
         {
+			int ixxxx = 0;
             try
             {
                 using (var client = ClientFactory.CreateClient<TrvExpenseReportCustomServiceClient>())
